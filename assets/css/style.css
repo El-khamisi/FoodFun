@@ -1,0 +1,102 @@
+/************General************/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #fff;
+    --secondary-color: #ebae21;
+    --footer-bg: #131230;
+    --footer-color: rgb(110, 107, 107);
+}
+
+.container {
+    padding: 5% 10%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/************Footer************/
+
+footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-color);
+}
+
+.foot {
+    align-items: flex-start;
+}
+
+.col-4 {
+    flex-basis: 33.33%;
+    margin: 0 10px;
+    padding: 0 10px;
+}
+
+
+/************foodfun************/
+
+.foodfun p {
+    margin-top: 10px;
+    color: var(--footer-color);
+    padding: 0 15px;
+}
+
+
+/************contact************/
+
+.cntct h5,
+.hrs h5 {
+    color: var(--secondary-color);
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+}
+
+.contact {
+    margin: 15px 5px;
+    justify-content: flex-start;
+}
+
+.contact i {
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 5px;
+}
+
+.contact span {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+
+/************Hours************/
+
+.hrs p {
+    margin: 10px 5px;
+}
+
+
+/************media query************/
+
+
+/************Phone & Tab************/
+
+@media(max-width:767px) {
+    .foot {
+        flex-wrap: wrap;
+    }
+    .col-4 {
+        flex-basis: 100%;
+        margin: 5px 0;
+    }
+}
