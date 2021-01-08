@@ -1,0 +1,603 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+iframe {
+    position: absolute;
+}
+
+:root {
+    --headline-size: 36px;
+    --darkblue: #131230;
+    --white: #fff;
+    --yellow: #ffb606;
+    --gray: #6c757d;
+    --darkgray: #343a40;
+    --lightgray: #e6e6e6;
+    --font-xsmall: 14px;
+    --font-small: 18px;
+    --font-medium: 36px;
+    --font-large: 42px;
+    --font-xlarge: 64px;
+}
+
+.secondary-color {
+    color: var(--yellow);
+}
+
+.primary-btn {
+    border: none;
+    background-color: var(--yellow);
+    color: var(--darkblue);
+    font-size: var(--font-xsmall);
+    border: 1px solid transparent;
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+.primary-btn:hover {
+    background: transparent;
+    border: 1px solid var(--yellow);
+    transition: 0.5s;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+/* banner */
+
+.banner {
+    background: url(../media/images/banner-bg.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    padding: 25% 0%;
+}
+
+.banner p {
+    margin: 1em;
+    font-size: var(--font-small);
+    color: var(--white);
+}
+
+.banner h1 {
+    font-size: var(--font-xlarge);
+    color: var(--white);
+}
+
+
+/* End banner */
+
+
+/* welcome */
+
+.welcome {
+    background: url(../media/images/food-bg.png) no-repeat;
+    background-position: 100% 60%;
+    padding: 5%;
+}
+
+.welcomeA {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+    margin: 10% 0;
+}
+
+.welcomeA img {
+    padding: 5% 0 20% 5%;
+    width: 50%;
+    height: 100%;
+}
+
+.welcomeA-paragraph {
+    width: 50%;
+    padding-top: 10%;
+    padding-right: 10%;
+}
+
+.welcomeA-paragraph h3 {
+    padding-bottom: 1em;
+    font-size: var(--font-large);
+}
+
+.welcomeA-paragraph span {
+    color: var(--yellow);
+    font-style: italic;
+}
+
+.welcomeA-paragraph p {
+    color: var(--gray);
+}
+
+.book-btn {
+    padding: 3%;
+}
+
+.welcomeB h3 {
+    font-size: var(--font-medium);
+}
+
+.welcomeB div h3 span {
+    font-style: italic;
+}
+
+.welcomeB-paragraph {
+    padding-right: 60%;
+    margin-top: 2em;
+    margin-bottom: 5em;
+    color: var(--gray);
+}
+
+.welcomeB-photos {
+    border-spacing: 1vw 3vw;
+}
+
+.welcomeB-photos td {
+    vertical-align: top;
+    background-color: var(--lightgray);
+}
+
+.welcomeB-photos td img {
+    width: 100%;
+}
+
+.img-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    font-size: 24px;
+}
+
+.photos-des {
+    color: var(--darkgray);
+    font-size: var(--font-small);
+    padding: 5%;
+    margin-left: 10%;
+    margin-bottom: 20%;
+}
+
+.img-wrap {
+    padding: 0;
+    overflow: hidden;
+}
+
+.welcomeB-photos td:hover img {
+    transform: scale(1.2);
+    transition: 1.5s;
+}
+
+.welcomeB-photos td:hover span {
+    color: var(--darkblue);
+}
+
+.welcomeB-photos td:hover {
+    cursor: pointer;
+    background-color: var(--yellow);
+    transition: 0.5s;
+}
+
+
+/* End Welcome */
+
+
+/* reservation */
+
+.reservation {
+    background: url(../media/images/reservation-bg.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+    color: var(--white);
+    font-size: 30px;
+    text-align: center;
+}
+
+.reservation-btn {
+    padding: 1% 3%;
+}
+
+.reservation-btn:hover {
+    color: var(--yellow);
+}
+
+
+/* End reservation */
+
+
+/* Deshes */
+
+.deshes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+.art-header {
+    text-align: center;
+    padding: 5%;
+}
+
+.art-header h3 {
+    font-size: var(--font-medium);
+}
+
+.art-header p {
+    font-style: italic;
+    color: var(--gray);
+}
+
+.deshe1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.deshe2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.deshe-des {
+    width: 50%;
+}
+
+.deshe-des h1 {
+    display: inline-block;
+    color: var(--darkblue);
+    font-size: var(--font-large);
+}
+
+.deshe-des hr {
+    display: inline-block;
+    width: 40%;
+    border: var(--darkblue) solid 1px;
+}
+
+.deshe-des h2 {
+    font-size: var(--font-large);
+    padding-left: 20%;
+    margin: 5% 0;
+}
+
+.deshe-des p {
+    color: var(--gray);
+    padding-right: 20%;
+    padding-left: 20%;
+}
+
+.deshe-des .price {
+    font-size: var(--font-medium);
+    color: var(--yellow);
+    padding-left: 20%;
+    margin: 5% 0;
+}
+
+.deshe-des .book-table {
+    padding-left: 20%;
+    text-decoration: none;
+    color: var(--darkblue);
+}
+
+.deshes img {
+    align-self: center;
+    padding: 5%;
+    width: 50%;
+}
+
+.deshe-des i {
+    margin: 1%;
+    cursor: pointer;
+}
+
+.deshe-des .book-table:hover i,
+.deshe-des .book-table i:hover {
+    transform: translateX(5px);
+    transition: 0.5s;
+    color: var(--yellow);
+}
+
+
+/* End Deshe */
+
+
+/* says */
+
+.says {
+    background: linear-gradient(rgb(6, 7, 54, 0.4), rgb(6, 7, 54, 0.4)), url(../media/images/testimonial-bg.jpg);
+    background-size: cover;
+    width: 100%;
+    padding: 15% 2%;
+}
+
+.says .art-header h3 {
+    color: var(--white);
+}
+
+.says .art-header p {
+    color: var(--white);
+}
+
+.cards-container {
+    width: 90vw;
+    overflow: hidden;
+    margin: auto;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(5, 45vw);
+    grid-template-rows: 95%;
+}
+
+.card {
+    background: url(../media/images/quote.png) no-repeat center;
+    background-position: top right;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2% 2%;
+    margin: 1%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    cursor: grab;
+}
+
+.card-info {
+    padding: 2% 1% 10% 1%;
+}
+
+.card img {
+    display: inline-block;
+    width: 50%;
+    height: 70%;
+    margin-right: 5%;
+}
+
+.card-info h3 {
+    font-size: 24px;
+    color: var(--darkblue);
+}
+
+.card:hover .card-info h3 {
+    color: var(--yellow);
+}
+
+.card-info h6 {
+    font-size: var(--font-xsmall);
+    font-style: italic;
+    color: var(--gray);
+    padding: 2%;
+}
+
+.card-info p {
+    font-size: 14px;
+    color: var(--gray);
+}
+
+.dots {
+    width: 100%;
+    margin-top: 2%;
+    text-align: center;
+}
+
+.dot {
+    display: inline-block;
+    background-color: var(--white);
+    width: 30px;
+    height: 10px;
+    border-radius: 20%;
+}
+
+.dot.active {
+    background-color: var(--yellow);
+}
+
+
+/* End says */
+
+.update {
+    padding: 5%;
+}
+
+.update-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.update-cont {
+    margin: 2%;
+    box-shadow: 10px 5px 5px var(--lightgray);
+}
+
+.update-photo {
+    width: 100%;
+}
+
+.update-dec {
+    padding: 10%;
+}
+
+.update-dec span {
+    display: inline-block;
+    margin: 5%;
+    color: var(--gray);
+}
+
+.update-photos-title {
+    font-size: 20px;
+}
+
+.update-dec p {
+    padding: 2% 0%;
+    margin: 2% 0%;
+    color: var(--gray);
+}
+
+.read-more {
+    cursor: pointer;
+}
+
+.read-more i {
+    margin: 2%;
+    cursor: pointer;
+}
+
+.read-more:hover i,
+.read-more i:hover {
+    transform: translateX(5px);
+    transition: 0.5s;
+    color: var(--yellow);
+}
+
+
+/* End Update */
+
+
+/* Book Table */
+
+.book-your-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15% 10%;
+    background: linear-gradient(rgb(6, 7, 54, 0.4), rgb(6, 7, 54, 0.4)), url(../media/images/table-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.book-your-table .art-header h3 {
+    color: var(--white);
+}
+
+.book-your-table .art-header p {
+    color: var(--white);
+}
+
+.picker {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    width: 60%;
+}
+
+.picker input {
+    width: 30%;
+    padding: 2%;
+    font-size: var(--font-xsmall);
+    border-radius: 5px;
+    border: none;
+}
+
+.update-btn {
+    padding: 1% 3%;
+}
+
+
+/* screen responsive */
+
+@media (max-width: 767px) {
+    .nav-list {
+        display: none;
+    }
+    .respons-btn {
+        display: block;
+    }
+    .welcome {
+        background-position: bottom right;
+    }
+    .welcomeA {
+        flex-direction: column;
+    }
+    .welcomeA img {
+        width: 100%;
+    }
+    .welcomeA-paragraph {
+        width: 100%;
+    }
+    .welcomeB-paragraph {
+        padding: 0%;
+    }
+    tbody,
+    tr,
+    td {
+        display: block;
+    }
+    .deshe1,
+    .deshe2 {
+        flex-direction: column;
+    }
+    .deshe-des {
+        width: 100%;
+    }
+    .deshe1 img,
+    .deshe2 img {
+        width: 100%;
+    }
+    .cards {
+        grid-template-columns: repeat(5, 90vw);
+    }
+    .card {
+        flex-direction: column;
+    }
+    .update-cards {
+        flex-direction: column;
+    }
+    .book-your-table {
+        padding: 10%;
+    }
+    .picker {
+        flex-direction: column;
+        width: 100%;
+    }
+    .picker input {
+        width: 100%;
+        margin: 2%;
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1000px) {
+    .nav-list {
+        display: none;
+    }
+    .respons-btn {
+        display: block;
+    }
+    .welcome {
+        background-position: bottom right;
+    }
+    .welcomeB-paragraph {
+        padding: 0%;
+    }
+    .cards {
+        grid-template-columns: repeat(5, 90vw);
+    }
+    .picker {
+        width: 100%;
+    }
+}

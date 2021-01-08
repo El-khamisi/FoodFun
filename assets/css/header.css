@@ -1,0 +1,131 @@
+/* header */
+
+
+/* responsive Nav */
+
+.respons-nav {
+    display: block;
+    position: absolute;
+    top: 95%;
+    left: 0;
+    background-color: var(--white);
+    width: 100%;
+}
+
+.respons-nav li {
+    display: block;
+    padding: 2%;
+}
+
+.respons-btn {
+    width: 15%;
+    height: 80%;
+    background-color: var(--yellow);
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+}
+
+.respons-btn i {
+    font-size: 64px;
+    color: var(--white);
+}
+
+
+/*  */
+
+.header {
+    background-color: var(--white);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 3vh;
+    height: 5em;
+    width: 90vw;
+    margin-left: 5vw;
+    padding: 0% 2%;
+    border-radius: 5px;
+}
+
+.logo:focus,
+.logo a:focus,
+.logo a img:focus {
+    outline: none;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-list li {
+    display: inline-block;
+}
+
+.header li a {
+    text-decoration: none;
+    color: var(--main-darkblue-color);
+    font-size: var(--font-small);
+    font-weight: bolder;
+    padding: 1vw;
+}
+
+.sub-nav {
+    position: absolute;
+    display: block;
+    margin: 1em 2em;
+    width: fit-content;
+    line-height: 2;
+    color: var(--main-darkblue-color);
+    background-color: var(--white);
+    opacity: 0;
+}
+
+.sub-nav li {
+    display: block;
+    margin-right: 8em;
+}
+
+.sub-nav li a {
+    display: block;
+}
+
+.blog-nav:hover .sub-nav {
+    display: block;
+    opacity: 1;
+    transform: translateY(-20px);
+    transition: 1.5s ease;
+}
+
+.sub-nav li:hover a {
+    color: var(--yellow);
+}
+
+
+/* End header */
+
+
+/* screen responsive */
+
+@media (max-width: 767px) {
+    .nav-list {
+        display: none;
+    }
+    .respons-btn {
+        display: block;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1000px) {
+    .nav-list {
+        display: none;
+    }
+    .respons-btn {
+        display: block;
+    }
+}
