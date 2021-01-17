@@ -1,0 +1,211 @@
+iframe {
+    position: absolute;
+}
+
+.secondary-color {
+    color: var(--text-color);
+}
+
+
+/* banner */
+
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/about-bg.jpg) center no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 25% 0%;
+}
+
+.banner p {
+    font-size: var(--font-small);
+    color: var(--primary-color);
+}
+
+.banner h1 {
+    font-size: var(--font-xlarge);
+    color: var(--primary-color);
+}
+
+
+/* End banner */
+
+
+/* welcome */
+
+.welcomeA img {
+    width: 100%;
+    height: 100%;
+}
+
+.welcomeA-paragraph h3 {
+    padding-bottom: 1em;
+    font-size: var(--font-large);
+}
+
+.welcomeA-paragraph span {
+    color: var(--text-color);
+    font-style: italic;
+}
+
+.welcomeA-paragraph p {
+    color: var(--default-color);
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+
+/* End Welcome */
+
+
+/* Deshes */
+
+.deshes {
+    flex-direction: column;
+}
+
+.deshe2 {
+    flex-direction: row-reverse;
+}
+
+.deshe-des h1 {
+    display: inline-block;
+    color: var(--footer-bg);
+    font-size: var(--font-large);
+}
+
+.deshe-des hr {
+    display: inline-block;
+    width: 40%;
+    border: var(--footer-bg) solid 1px;
+}
+
+.deshe-des h2 {
+    font-size: var(--font-large);
+    margin-bottom: 5%;
+}
+
+.deshe-des p {
+    color: var(--default-color);
+    margin-bottom: 15%;
+}
+
+.deshe-des .price {
+    font-size: var(--font-medium);
+    color: var(--text-color);
+    margin-bottom: 5%;
+}
+
+.deshes img {
+    padding: 5%;
+    width: 50%;
+}
+
+.res-btn {
+    background-color: transparent;
+}
+
+.res-btn:hover i,
+.res-btn i:hover {
+    transform: translateX(5px);
+    transition: 0.5s;
+    color: var(--text-color);
+}
+
+
+/* End Deshe */
+
+
+/* says */
+
+.says {
+    background: linear-gradient(rgb(6, 7, 54, 0.4), rgb(6, 7, 54, 0.4)), url(../images/testimonial-bg.jpg);
+    background-size: cover;
+    width: 100%;
+    padding: 15% 2%;
+}
+
+.says .art-header h3 {
+    color: var(--primary-color);
+}
+
+.says .art-header p {
+    color: var(--primary-color);
+}
+
+.cards-container {
+    width: 90vw;
+    overflow: hidden;
+    margin: auto;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(5, 45vw);
+    grid-template-rows: 95%;
+}
+
+.card {
+    background: url(../images/quote.png) no-repeat center;
+    background-position: top right;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2% 2%;
+    margin: 1%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    cursor: grab;
+}
+
+.card-info {
+    padding: 2% 1% 10% 1%;
+}
+
+.card img {
+    display: inline-block;
+    width: 50%;
+    height: 70%;
+    margin-right: 5%;
+}
+
+.card-info h3 {
+    font-size: 24px;
+    color: var(--footer-bg);
+}
+
+.card:hover .card-info h3 {
+    color: var(--text-color);
+}
+
+.card-info h6 {
+    font-size: var(--font-xsmall);
+    font-style: italic;
+    color: var(--default-color);
+    padding: 2%;
+}
+
+.card-info p {
+    font-size: 14px;
+    color: var(--default-color);
+}
+
+.dots {
+    width: 100%;
+    margin-top: 2%;
+    text-align: center;
+}
+
+.dot {
+    display: inline-block;
+    background-color: var(--primary-color);
+    width: 30px;
+    height: 10px;
+    border-radius: 20%;
+}
+
+.dot.active {
+    background-color: var(--text-color);
+}
+
+
+/* End says */

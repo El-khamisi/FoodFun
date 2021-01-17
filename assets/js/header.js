@@ -10,4 +10,4 @@ resbtn.addEventListener('click', function() {
 
 document.querySelector('.header').addEventListener('mousedown', e => {
     e.preventDefault();
-})
+});

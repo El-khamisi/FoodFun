@@ -1,12 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
 
-    <title>Main Title</title>
+    <title>BlogHome</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo/favicon.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/blog-home.css">
 
 
 </head>
@@ -14,55 +23,375 @@
 <body>
 
 
-
-    <nav>
-        <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">MENU</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#">CONTACT</a></li>
-            <li><a href="#">ELEMENTS</a></li>
-        </ul>
-
-    </nav>
+    <!-- MainHeader -->
+    <div id="header">
+        <iframe scrolling="no" width="100%" height="100%" src="header.html" frameborder="0"></iframe>
+    </div>
 
 
-    <main>
+    <!----------Header---------->
+    <header>
+        <div class="Blog">
+            <div>
+                <h1>Our Blog</h1>
+                <a href="index.html">Home</a> /
+                <a href="blog-home.html">BlogPage</a>
+            </div>
+        </div>
+    </header>
+
+    <!-----------Photos-------->
+    <section>
+        <div class="container">
+            <div class="photo center">
+                <div class="col-4 col-sm col-5">
+                    <div class="img img1  marg">
+                        <div class="blur center">
+                            <div>
+                                <h5>Social Life</h5>
+                                <p style="color: #fff;">Enjoy your social life together</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4 col-sm col-5">
+                    <div class="img img2">
+                        <div class="blur center">
+                            <div>
+                                <h5>Politics</h5>
+                                <p style="color: #fff;">Be a part of politics</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4 col-sm col-5">
+                    <div class="img img3  marg">
+                        <div class="blur center">
+                            <div>
+                                <h5>food</h5>
+                                <p style="color: #fff;">let the food be finished</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="Infoo center wrap contains">
+        <div class="contain-right col-sm col-md col-lg">
+            <section>
+                <div class="info center wrap">
+                    <div class="col-12 center wrap col-sm">
+                        <div class="col-6 col-sm ">
+                            <div>
+                                <span>Food,</span><span>Technology,</span>
+                                <span>Politics,</span><span>Lifestyle,</span>
+
+                                <p>Mark wiens <i class="far fa-user"></i></p>
+                                <p>12 Dec,2017<i class="fal fa-calendar"></i></p>
+                                <p>1.2M views <i class="far fa-eye"></i></p>
+                                <p>06 Comments <i class="fal fa-comment"></i></p>
+                            </div>
+                        </div>
+                        <div class="col-4 col-sm pad pad-right col-lg">
+                            <div class="info-img">
+                                <img src="assets/images/blog/main-blog/m-blog-1.jpg" alt="" />
+                                <h4>
+                                    Astronomy Binoculars A Great Alternative
+                                </h4>
+                                <p>
+                                    MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.
+                                </p>
+
+                                <button><a href="#">View More</a></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
 
 
-        <article>
-            <h2>Article heading</h2>
+                <div class="info center wrap">
+                    <div class="col-12 center wrap col-sm">
+                        <div class="col-6 col-sm">
+                            <div>
+                                <span>Food,</span><span>Technology,</span>
+                                <span>Politics,</span><span>Lifestyle,</span>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis
-                sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
+                                <p>Mark wiens <i class="far fa-user"></i></p>
+                                <p>12 Dec,2017<i class="far fa-calendar"></i></p>
+                                <p>1.2M views <i class="far fa-eye"></i></p>
+                                <p>06 Comments <i class="far fa-comment"></i></p>
+                            </div>
+                        </div>
+                        <div class="col-4 col-sm pad pad-right">
+                            <div class="info-img">
+                                <img src="assets/images/blog/main-blog/m-blog-2.jpg" alt="" />
+                                <h4>
+                                    The Basic Of Buying A Telescope
+                                </h4>
+                                <p>
+                                    MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.
+                                </p>
 
-            <h3>Subsection</h3>
+                                <button><a href="#">View More</a></button>
+                            </div>
+                        </div>
+                    </div>
 
-            <p>Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.</p>
+                </div>
 
-        </article>
+                <div class="info center wrap">
+                    <div class="col-12 center wrap col-sm">
+                        <div class="col-6 col-sm">
+                            <div>
+                                <span>Food,</span><span>Technology,</span>
+                                <span>Politics,</span><span>Lifestyle,</span>
 
+                                <p>Mark wiens <i class="far fa-user"></i></p>
+                                <p>12 Dec,2017<i class="far fa-calendar"></i></p>
+                                <p>1.2M views <i class="far fa-eye"></i></p>
+                                <p>06 Comments <i class="far fa-comment"></i></p>
+                            </div>
+                        </div>
+                        <div class="col-4 col-sm pad pad-right">
+                            <div class="info-img">
+                                <img src="assets/images/blog/main-blog/m-blog-3.jpg" alt="" />
+                                <h4>
+                                    The Glossary Of Telescope
+                                </h4>
+                                <p>
+                                    MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.
+                                </p>
 
+                                <button><a href="#">View More</a></button>
+                            </div>
+                        </div>
+                    </div>
 
-    </main>
+                </div>
 
-    <aside>
-        <h2>Related</h2>
+                <div class="info center wrap">
+                    <div class="col-12 center wrap col-sm">
+                        <div class="col-6 col-sm">
+                            <div>
+                                <span>Food,</span><span>Technology,</span>
+                                <span>Politics,</span><span>Lifestyle,</span>
 
-        <ul>
-            <li><a href="#">Oh I do like to be beside the seaside</a></li>
-            <li><a href="#">Oh I do like to be beside the sea</a></li>
-            <li><a href="#">Although in the North of England</a></li>
-            <li><a href="#">It never stops raining</a></li>
-            <li><a href="#">Oh well...</a></li>
-        </ul>
-    </aside>
+                                <p>Mark wiens <i class="far fa-user"></i></p>
+                                <p>12 Dec,2017<i class="far fa-calendar"></i></p>
+                                <p>1.2M views <i class="far fa-eye"></i></p>
+                                <p>06 Comments <i class="far fa-comment"></i></p>
+                            </div>
+                        </div>
+                        <div class="col-4 col-sm pad pad-right">
+                            <div class="info-img">
+                                <img src="assets/images/blog/main-blog/m-blog-4.jpg" alt="" />
+                                <h4>
+                                    The Night Sky
+                                </h4>
+                                <p>
+                                    MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.
+                                </p>
 
+                                <button><a href="#">View More</a></button>
+                            </div>
+                        </div>
+                    </div>
 
-    <footer>
-        <p>©Copyright 2020 by nobody. All rights reversed.</p>
-    </footer>
+                </div>
+
+                <div class="info center wrap ">
+                    <div class="col-12 center wrap col-sm">
+                        <div class="col-6 col-sm">
+                            <div>
+                                <span>Food,</span><span>Technology,</span>
+                                <span>Politics,</span><span>Lifestyle,</span>
+
+                                <p>Mark wiens <i class="far fa-user"></i></p>
+                                <p>12 Dec,2017<i class="far fa-calendar"></i></p>
+                                <p>1.2M views <i class="far fa-eye"></i></p>
+                                <p>06 Comments <i class="far fa-comment"></i></p>
+                            </div>
+                        </div>
+                        <div class="col-4 info-img col-sm pad pad-right">
+                            <div class="info-img">
+                                <img src="assets/images/blog/main-blog/m-blog-5.jpg" alt="" />
+                                <h4>
+                                    Telescopes 101
+                                </h4>
+                                <p>
+                                    MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.
+                                </p>
+
+                                <button><a href="#">View More</a></button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="info">
+                    <div class="col-4 center ">
+                        <div class="nums">
+                            <a href="#"><i class="fal fa-chevron-left"></i></a>
+                            <a href="#">01</a>
+                            <a href="#">02</a>
+                            <a href="#">03</a>
+                            <a href="#">04</a>
+                            <a href="#">09</a>
+                            <a href="#"> <i class="fal fa-chevron-right"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </section>
+        <!------------Aside---------------->
+        <div class="contain col-sm col-md">
+            <aside class="col-4 col-sm">
+                <div class="side">
+                    <form class="center">
+                        <input type="search">
+                        <i class="far fa-search"></i>
+                    </form>
+                    <div class="personal-data">
+                        <img src="assets/images/blog/author.png" alt="">
+                        <h5>Charlie Barber</h5>
+                        <p>Senior blog writer</p>
+                        <div class="icon center">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-github"></i>
+                            <i class="fab fa-behance"></i>
+                        </div>
+                        <p>
+                            Boot camps have its supporters andit sdetractors. Some people do not understand why you should have to spend money on boot camp when you can get. Boot camps have itssuppor ters andits detractors.
+                        </p>
+                    </div>
+                    <!----------Popular-Posts-------->
+                    <div class="popular-posts">
+                        <div>
+                            <h4>Popular Posts</h4>
+                        </div>
+                        <div class=" post center strt">
+                            <img src="assets/images/blog/popular-post/post1.jpg">
+                            <div>
+                                <h5>Space The Final Frontier</h5>
+                                <p>02 Hours ago</p>
+                            </div>
+                        </div>
+                        <div class=" post center strt">
+                            <img src="assets/images/blog/popular-post/post2.jpg">
+                            <div>
+                                <h5>Space The Final Frontier</h5>
+                                <p>02 Hours ago</p>
+                            </div>
+                        </div>
+                        <div class=" post center strt">
+                            <img src="assets/images/blog/popular-post/post3.jpg">
+                            <div>
+                                <h5>Space The Final Frontier</h5>
+                                <p>02 Hours ago</p>
+                            </div>
+                        </div>
+                        <div class=" post center strt">
+                            <img src="assets/images/blog/popular-post/post4.jpg">
+                            <div>
+                                <h5>Space The Final Frontier</h5>
+                                <p>02 Hours ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="go-Photo">
+                        <img src="assets/images/blog/add.jpg">
+                    </div>
+                    <!------------Post-Catogries------------>
+                    <div class="post-catgories">
+                        <div>
+                            <h4>PostCatgories</h4>
+                        </div>
+                        <div class="cat center">
+                            <p>Technology</p>
+                            <p>37</p>
+                        </div>
+
+                        <div class="cat center">
+                            <p>Lifestyle</p>
+                            <p>24</p>
+                        </div>
+                        <div class="cat center">
+                            <p>Fashion</p>
+                            <p>59</p>
+                        </div>
+                        <div class="cat center">
+                            <p>Art</p>
+                            <p>29</p>
+                        </div>
+                        <div class="cat center">
+                            <p>Food</p>
+                            <p>15</p>
+                        </div>
+                        <div class="cat center">
+                            <p>Architecture</p>
+                            <p>09</p>
+                        </div>
+                        <div class="cat center">
+                            <p>Adventure</p>
+                            <p>44</p>
+                        </div>
+                    </div>
+                    <!----------New sletter------>
+                    <div class="new-sletter">
+                        <div>
+                            <h4>Newsletter</h4>
+                        </div>
+                        <p>
+                            Here, I focus on a range of items and features that we use in life without giving them a second thought.
+                        </p>
+                        <form class="center">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" placeholder="Enter email">
+                            <button>Subscribe</button>
+                        </form>
+                        <p>You can unsubscribe at any time</p>
+                    </div>
+                    <!-----------------Tag-Clouds------------>
+                    <div class="tag-clouds">
+                        <div>
+                            <h4>Newsletter</h4>
+                        </div>
+                        <div>
+                            <a href="#">Technology</a>
+                            <a href="#">Fashion</a>
+                            <a href="#">Architecture</a>
+                            <a href="#">Fashion</a>
+                            <a href="#">Food</a>
+                            <a href="#">Technology</a>
+                            <a href="#">Lifestyle</a>
+                            <a href="#">Art</a>
+                            <a href="#">Adventure</a>
+                            <a href="#">Food</a>
+                            <a href="#">Lifestyle</a>
+                            <a href="#">Adventure</a>
+
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+    </div>
+    </div>
+
+    <!---------Footer---------->
+
+    <div id="footer">
+        <iframe scrolling="no" width="100%" height="100%" src="footer.html" frameborder="0"></iframe>
+    </div>
 
 </body>
 

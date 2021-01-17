@@ -1,9 +1,12 @@
-/************General************/
+/**************General*********/
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    outline: none;
+    border: none;
+    font-family: "Playfair Display", serif;
 }
 
 :root {
@@ -11,6 +14,38 @@
     --secondary-color: #ebae21;
     --footer-bg: #131230;
     --footer-color: rgb(110, 107, 107);
+    /********Elements-colors*****/
+    --text-color: #ffb606;
+    --default-color: #777777;
+    --default-colordark: #343a40;
+    --prim-color: #f8b600;
+    --success-color: #4cd3e3;
+    --info-color: #38a4ff;
+    --warning-color: #f4e700;
+    --Danger-color: #f44a40;
+    --link-color: #f9f9ff;
+    /**********fonts-size********/
+    --font-xsmall: 14px;
+    --font-small: 18px;
+    --font-xmedium: 24px;
+    --font-medium: 36px;
+    --font-large: 42px;
+    --font-xlarge: 64px;
+    /**********flex-cols************/
+    --col-3: 25%;
+    --col-4: 33.33%;
+    --col-6: 50%;
+    --col-12: 100%;
+    --col-8: 60%;
+}
+
+iframe {
+    position: absolute;
+    z-index: 99999;
+}
+
+#footer iframe {
+    height: 45%;
 }
 
 .container {
@@ -23,80 +58,168 @@
     align-items: center;
 }
 
-
-/************Footer************/
-
-footer {
-    background-color: var(--footer-bg);
-    color: var(--footer-color);
-}
-
-.foot {
-    align-items: flex-start;
-}
-
-.col-4 {
-    flex-basis: 33.33%;
+.col-6 {
+    width: 50%;
     margin: 0 10px;
     padding: 0 10px;
 }
 
 
-/************foodfun************/
+/***********commont Artical********/
 
-.foodfun p {
-    margin-top: 10px;
-    color: var(--footer-color);
-    padding: 0 15px;
+.art-header {
+    text-align: center;
+    padding: 5%;
+}
+
+.art-header h3 {
+    font-size: var(--font-medium);
+}
+
+.art-header p {
+    font-style: italic;
+    color: var(--default-color);
 }
 
 
-/************contact************/
+/***********elements-btns**********/
 
-.cntct h5,
-.hrs h5 {
-    color: var(--secondary-color);
-    font-weight: 700;
-    text-transform: capitalize;
-    font-size: 20px;
-    font-family: "Playfair Display", serif;
+.btn a {
+    padding: 12px 30px;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 40px;
+    border: 1px solid transparent;
 }
 
-.contact {
-    margin: 15px 5px;
-    justify-content: flex-start;
+.btn-light,
+.btn-link,
+.btn-disable,
+.btn-outline-disable,
+.btn-outline-light:hover,
+.btn-outline-disable:hover,
+.btn-outline-link:hover {
+    background-color: var(--link-color);
 }
 
-.contact i {
-    font-size: 20px;
-    line-height: 20px;
-    margin-right: 5px;
+.btn-light a,
+.btn-link a,
+.btn-outline-link a,
+.btn-outline-light a:hover,
+.btn-link a:hover,
+.btn-outline-link a:hover {
+    color: #222222;
 }
 
-.contact span {
-    font-size: 14px;
-    line-height: 21px;
+.btn-primary,
+.btn-outline-primary:hover a {
+    background-color: var(--prim-color);
+    color: var(--primary-color);
+}
+
+.btn-success,
+.btn-outline-success:hover a {
+    background-color: var(--success-color);
+    color: var(--primary-color);
+}
+
+.btn-info,
+.btn-outline-info:hover a {
+    background-color: var(--info-color);
+    color: var(--primary-color);
+}
+
+.btn-warn,
+.btn-outline-warn:hover a {
+    background-color: var(--warning-color);
+    color: var(--primary-color);
+}
+
+.btn-Danger,
+.btn-outline-Danger:hover a {
+    background-color: var(--Danger-color);
+    color: var(--primary-color);
+}
+
+.btn-link a {
+    text-decoration: underline;
+}
+
+.btn-disable a,
+.btn-outline-disable:hover a {
+    color: #007bff;
+    cursor: not-allowed;
+}
+
+.btn-light:hover,
+.btn-link:hover,
+.btn-outline-link,
+.btn-outline-light {
+    background-color: var(--primary-color);
+}
+
+.btn-outline-light a,
+.btn-outline-disable a,
+.btn-outline-disable:hover a {
+    color: #0471e6;
+    border: 1px solid #f9f9ff;
+}
+
+.btn-outline-primary a,
+.btn-primary a:hover {
+    background-color: var(--primary-color);
+    border: 1px solid var(--prim-color);
+    color: var(--prim-color);
+}
+
+.btn-outline-success a,
+.btn-success a:hover {
+    background-color: var(--primary-color);
+    border: 1px solid var(--success-color);
+    color: var(--success-color);
+}
+
+.btn-outline-info a,
+.btn-info a:hover {
+    background-color: var(--primary-color);
+    border: 1px solid var(--info-color);
+    color: var(--info-color);
+}
+
+.btn-outline-warn a,
+.btn-warn a:hover {
+    background-color: var(--primary-color);
+    border: 1px solid var(--warning-color);
+    color: var(--warning-color);
+}
+
+.btn-outline-Danger a,
+.btn-Danger a:hover {
+    background-color: var(--primary-color);
+    border: 1px solid var(--Danger-color);
+    color: var(--Danger-color);
 }
 
 
-/************Hours************/
-
-.hrs p {
-    margin: 10px 5px;
-}
+/*********media query**********/
 
 
-/************media query************/
-
-
-/************Phone & Tab************/
+/********Phone & Tab*******/
 
 @media(max-width:767px) {
-    .foot {
-        flex-wrap: wrap;
+    #footer iframe {
+        height: 100%;
     }
     .col-4 {
         flex-basis: 100%;
         margin: 5px 0;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1000px) {
+    #footer iframe {
+        height: 60%;
     }
 }

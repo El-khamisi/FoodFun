@@ -8,7 +8,7 @@
     position: absolute;
     top: 95%;
     left: 0;
-    background-color: var(--white);
+    background-color: var(--primary-color);
     width: 100%;
 }
 
@@ -20,22 +20,23 @@
 .respons-btn {
     width: 15%;
     height: 80%;
-    background-color: var(--yellow);
+    background-color: var(--secondary-color);
     border-radius: 10px;
     text-align: center;
     display: none;
+    cursor: pointer;
 }
 
 .respons-btn i {
     font-size: 64px;
-    color: var(--white);
+    color: var(--primary-color);
 }
 
 
 /*  */
 
 .header {
-    background-color: var(--white);
+    background-color: var(--primary-color);
     position: absolute;
     display: flex;
     align-items: center;
@@ -61,6 +62,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    cursor: pointer;
 }
 
 .nav-list li {
@@ -69,7 +71,7 @@
 
 .header li a {
     text-decoration: none;
-    color: var(--main-darkblue-color);
+    color: var(--footer-bg);
     font-size: var(--font-small);
     font-weight: bolder;
     padding: 1vw;
@@ -81,8 +83,8 @@
     margin: 1em 2em;
     width: fit-content;
     line-height: 2;
-    color: var(--main-darkblue-color);
-    background-color: var(--white);
+    color: var(--footer-bg);
+    background-color: var(--primary-color);
     opacity: 0;
 }
 
@@ -103,7 +105,7 @@
 }
 
 .sub-nav li:hover a {
-    color: var(--yellow);
+    color: var(--secondary-color);
 }
 
 
