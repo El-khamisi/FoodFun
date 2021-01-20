@@ -204,7 +204,7 @@ aside {
     background-color: #f9f9ff;
     height: auto;
     border: 1px solid #eeeeee;
-    margin-top: 40px;
+    margin-left: 10%;
 }
 
 .side {
@@ -477,8 +477,5 @@ aside {
     .side {
         padding-right: 0;
         padding-left: 0;
-    }
-    .info-img img {
-        width: 100%;
     }
 }

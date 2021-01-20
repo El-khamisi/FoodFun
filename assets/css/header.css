@@ -18,8 +18,7 @@
 }
 
 .respons-btn {
-    width: 15%;
-    height: 80%;
+    padding: 2%;
     background-color: var(--secondary-color);
     border-radius: 10px;
     text-align: center;
@@ -28,7 +27,7 @@
 }
 
 .respons-btn i {
-    font-size: 64px;
+    font-size: 36px;
     color: var(--primary-color);
 }
 
@@ -43,10 +42,9 @@
     flex-direction: row;
     justify-content: space-between;
     top: 3vh;
-    height: 5em;
     width: 90vw;
     margin-left: 5vw;
-    padding: 0% 2%;
+    padding: 1.5% 2%;
     border-radius: 5px;
 }
 
