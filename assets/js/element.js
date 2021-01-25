@@ -65,8 +65,8 @@ function closeAllSelect(elmnt) {
 }
 document.addEventListener("click", closeAllSelect);
 
-
 /*********btnTop**********/
+
 var btnTop = document.getElementById("topBtn");
 var fixedmenu = this.document.getElementById("header");
 window.onscroll = function(){
