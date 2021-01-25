@@ -1,0 +1,199 @@
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/about-bg.jpg) center no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 25% 0%;
+}
+
+.Blog {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.Blog h1 {
+    color: var(--text-seccolor);
+    font-size: var(--font-xlarge);
+}
+
+.Blog a {
+    color: var(--text-seccolor);
+    font-size: var(--font-small);
+}
+
+
+/* *************** */
+
+p {
+    color: var(--default-color);
+}
+
+.pagraph {
+    box-shadow: 0px 30px 21.58px -26px #b0b0b0;
+    margin: 25px 0;
+}
+
+.info-img h5 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    padding-bottom: 15px;
+}
+
+.Infoo .imag img {
+    width: 100%;
+}
+
+
+/*
+#b0b0b0 -20.84px 21.58px 30px 0px
+*/
+
+.col-3 {
+    flex-basis: 100%;
+    text-align: end;
+    margin-right: 30px;
+}
+
+.lside {
+    margin-top: 20px;
+}
+
+.lside p {
+    margin: 10px 0;
+}
+
+.lside P:hover,
+.lside span:nth-child(2) {
+    color: var(--aside-color);
+}
+
+.lside i {
+    color: #131230;
+    margin-left: 5px;
+}
+
+
+/****Comments*****/
+
+.comments,
+.Replys {
+    margin: 20px 0;
+    background-color: var(--link-color);
+    padding: 15px 20px;
+}
+
+.comment {
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.comments img {
+    margin-right: 15px;
+}
+
+.comments a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--footer-bg);
+}
+
+.comments button {
+    border: none;
+    outline: none;
+}
+
+.comments button a {
+    color: var(--default-colordark);
+    background-color: var(--primary-color);
+    border: 1px solid #eeeeee;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 8px;
+}
+
+.comments button:hover a {
+    background-color: var(--aside-color);
+    color: var(--primary-color);
+}
+
+
+/******Replays***********/
+
+.Replys h4,
+.comments h4 {
+    color: var(--footer-bg);
+    font-size: 24px;
+    line-height: 22px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.Replys input,
+.Replys textarea {
+    color: var(--gray-color);
+    ;
+    padding-left: 20px;
+    outline: none;
+    border: 1px solid#ffffff;
+}
+
+.Replys input[type="text"]:nth-child(1) {
+    margin-right: 20px;
+}
+
+.Replys input[type="text"]:nth-child(1),
+.Replys input[type="email"] {
+    width: 48%;
+    padding: 10px 20px;
+}
+
+.Replys input[type="text"] {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 20px;
+}
+
+.Replys textarea {
+    width: 100%;
+    min-height: 10vh;
+    max-height: 30vh;
+    resize: vertical;
+}
+
+.Replys button {
+    padding: 15px;
+    text-transform: uppercase;
+    background-color: #ffb606;
+    border: 1px solid #ffb606;
+    color: #131230;
+    font-size: 14px;
+    text-align: center;
+    line-height: 21px;
+    margin: auto;
+    transition: background-color 500ms linear;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Replys button:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--footer-bg);
+}
+
+
+/*
+.Replys{
+    justify-content: space-between;
+}
+.col-5{
+    flex-basis: 50%;
+}
+.col-12{
+    flex-basis: 100%;
+}
+input{
+    width: 100%;
+}*/
