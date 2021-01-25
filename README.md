@@ -27,7 +27,7 @@
 ![Switches](assets/readme/modes.png)
 
 * #### Embedded live maps by Google to locating the resturant:  
-![map](assets/readme/map.png)
+![map](assets/readme/maps.png)
 
 * #### Responsive style to different screens:
 ```
@@ -45,7 +45,7 @@
 
 ### We tried to enhance the readability of code by:
 1. #### Using `HTML5` section and outlines:
-![struct](assets/readme/struct.png)
+![struct](assets/readme/structure.png)
 
 2. #### Global Navbar and Footer in a separated file and include them by `iframe` a nested browsing context:
 ```                                            
