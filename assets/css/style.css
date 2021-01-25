@@ -9,13 +9,16 @@
     font-family: "Playfair Display", serif;
 }
 
-:root {
+.lightroot {
     --primary-color: #fff;
     --secondary-color: #ebae21;
     --footer-bg: #131230;
-    --footer-color: rgb(110, 107, 107);
+    --footer-color: #6e6b6b;
+    --footer-backg: #131230;
     /********Elements-colors*****/
     --text-color: #ffb606;
+    --text-seccolor: #ffffff;
+    --text-bcolor: #000000;
     --default-color: #777777;
     --default-colordark: #343a40;
     --prim-color: #f8b600;
@@ -24,6 +27,41 @@
     --warning-color: #f4e700;
     --Danger-color: #f44a40;
     --link-color: #f9f9ff;
+    --cloud: #fff;
+    /**********fonts-size********/
+    --font-xsmall: 14px;
+    --font-small: 18px;
+    --font-xmedium: 24px;
+    --font-medium: 36px;
+    --font-large: 42px;
+    --font-xlarge: 64px;
+    /**********flex-cols************/
+    --col-3: 25%;
+    --col-4: 33.33%;
+    --col-6: 50%;
+    --col-12: 100%;
+    --col-8: 60%;
+}
+
+.darkroot {
+    --primary-color: #0d1117;
+    --secondary-color: #ebae21;
+    --footer-bg: #58a6ff;
+    --footer-color: #6e6b6b;
+    --footer-backg: #000;
+    /********Elements-colors*****/
+    --text-color: #ffb606;
+    --text-seccolor: #fff;
+    --text-bcolor: #ffffff;
+    --default-color: #8b949e;
+    --default-colordark: #828b95;
+    --prim-color: #f8b600;
+    --success-color: #4cd3e3;
+    --info-color: #38a4ff;
+    --warning-color: #f4e700;
+    --Danger-color: #f44a40;
+    --link-color: #161b22;
+    --cloud: #21262d;
     /**********fonts-size********/
     --font-xsmall: 14px;
     --font-small: 18px;
@@ -41,7 +79,7 @@
 
 iframe {
     position: absolute;
-    z-index: 99999;
+    /* z-index: 99999; */
 }
 
 #footer iframe {
@@ -73,6 +111,7 @@ iframe {
 }
 
 .art-header h3 {
+    color: var(--text-bcolor);
     font-size: var(--font-medium);
 }
 
@@ -80,6 +119,93 @@ iframe {
     font-style: italic;
     color: var(--default-color);
 }
+
+
+/* Toggle Between Modes */
+
+.toggle-btn {
+    position: fixed;
+    top: calc(100vh - 145px);
+    left: 0;
+    background-color: #fff;
+    width: 30px;
+    height: 145px;
+    border-radius: 40px;
+    z-index: 5;
+}
+
+.oricheck {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: 0px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+}
+
+.toggle-btn span {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    overflow: hidden;
+    opacity: 1;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px #d9d9d9;
+    border-radius: 40px;
+    transition: 0.2s ease background-color, 0.2s ease opacity;
+}
+
+.toggle-btn span:before,
+.toggle-btn span:after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    transition: 0.5s ease transform, 0.2s ease background-color;
+}
+
+.toggle-btn span:before {
+    background-color: #fff;
+    transform: translate(0px, -58px);
+    z-index: 1;
+}
+
+.toggle-btn span:after {
+    background-color: #000;
+    transform: translate(0px, 8px);
+    z-index: 0;
+}
+
+.toggle-btn input[type="checkbox"]:checked+span {
+    background-color: #000;
+}
+
+.toggle-btn input[type="checkbox"]:active+span {
+    opacity: 0.5;
+}
+
+.toggle-btn input[type="checkbox"]:checked+span:before {
+    background-color: #000;
+    transform: translate(0px, 58px);
+}
+
+.toggle-btn input[type="checkbox"]:checked+span:after {
+    background-color: #fff;
+    transform: translate(0px, 95px);
+}
+
+
+/*  End Toggle Between Modes */
 
 
 /***********elements-btns**********/
@@ -110,7 +236,7 @@ iframe {
 .btn-outline-light a:hover,
 .btn-link a:hover,
 .btn-outline-link a:hover {
-    color: #222222;
+    color: var(--default-colordark);
 }
 
 .btn-primary,

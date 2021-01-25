@@ -6,6 +6,10 @@ iframe {
     color: var(--text-color);
 }
 
+body {
+    background: var(--primary-color);
+}
+
 
 /* banner */
 
@@ -18,12 +22,12 @@ iframe {
 
 .banner p {
     font-size: var(--font-small);
-    color: var(--primary-color);
+    color: var(--text-seccolor);
 }
 
 .banner h1 {
     font-size: var(--font-xlarge);
-    color: var(--primary-color);
+    color: var(--text-seccolor);
 }
 
 
@@ -38,6 +42,7 @@ iframe {
 }
 
 .welcomeB h3 {
+    color: var(--text-bcolor);
     font-size: var(--font-medium);
 }
 
@@ -87,6 +92,10 @@ iframe {
     font-size: 24px;
 }
 
+.img-title h4 {
+    color: var(--text-bcolor);
+}
+
 .photos-des {
     color: var(--default-colordark);
     font-size: var(--font-small);
@@ -112,11 +121,11 @@ iframe {
 }
 
 .book-your-table .art-header h3 {
-    color: var(--primary-color);
+    color: var(--text-seccolor);
 }
 
 .book-your-table .art-header p {
-    color: var(--primary-color);
+    color: var(--text-seccolor);
 }
 
 .picker {

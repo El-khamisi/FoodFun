@@ -6,6 +6,10 @@ iframe {
     color: var(--text-color);
 }
 
+body {
+    background: var(--primary-color);
+}
+
 
 /* banner */
 
@@ -18,12 +22,12 @@ iframe {
 
 .banner p {
     font-size: var(--font-small);
-    color: var(--primary-color);
+    color: var(--text-seccolor);
 }
 
 .banner h1 {
     font-size: var(--font-xlarge);
-    color: var(--primary-color);
+    color: var(--text-seccolor);
 }
 
 
@@ -45,6 +49,7 @@ iframe {
 .welcomeA-paragraph h3 {
     padding-bottom: 1em;
     font-size: var(--font-large);
+    color: var(--text-bcolor);
 }
 
 .welcomeA-paragraph span {
@@ -59,6 +64,7 @@ iframe {
 }
 
 .welcomeB h3 {
+    color: var(--text-bcolor);
     font-size: var(--font-medium);
 }
 
@@ -108,6 +114,10 @@ iframe {
     font-size: 24px;
 }
 
+.img-title h4 {
+    color: var(--text-bcolor);
+}
+
 .photos-des {
     color: var(--default-colordark);
     font-size: var(--font-small);
@@ -131,6 +141,14 @@ iframe {
     color: var(--primary-color);
     font-size: 30px;
     text-align: center;
+}
+
+.reservation h2 {
+    color: var(--text-seccolor);
+}
+
+.reservation p {
+    color: var(--text-seccolor);
 }
 
 
@@ -160,6 +178,7 @@ iframe {
 }
 
 .deshe-des h2 {
+    color: var(--text-bcolor);
     font-size: var(--font-large);
     margin-bottom: 5%;
 }
@@ -184,6 +203,10 @@ iframe {
     background-color: transparent;
 }
 
+.res-btn i {
+    color: var(--default-colordark);
+}
+
 .res-btn:hover i,
 .res-btn i:hover {
     transform: translateX(5px);
@@ -205,11 +228,11 @@ iframe {
 }
 
 .says .art-header h3 {
-    color: var(--primary-color);
+    color: var(--text-seccolor);
 }
 
 .says .art-header p {
-    color: var(--primary-color);
+    color: var(--text-seccolor);
 }
 
 .cards-container {
@@ -227,7 +250,7 @@ iframe {
 .card {
     background: url(../images/quote.png) no-repeat center;
     background-position: top right;
-    background-color: white;
+    background-color: var(--primary-color);
     border-radius: 10px;
     padding: 2% 2%;
     margin: 1%;
@@ -309,6 +332,7 @@ iframe {
 }
 
 .update-photos-title {
+    color: var(--text-bcolor);
     margin-top: 5%;
     font-size: 20px;
 }
@@ -319,6 +343,10 @@ iframe {
 
 .up-btn {
     background-color: transparent;
+}
+
+.up-btn i {
+    color: var(--default-colordark);
 }
 
 .up-btn:hover i,
@@ -347,11 +375,11 @@ iframe {
 }
 
 .book-your-table .art-header h3 {
-    color: var(--primary-color);
+    color: var(--text-seccolor);
 }
 
 .book-your-table .art-header p {
-    color: var(--primary-color);
+    color: var(--text-seccolor);
 }
 
 .picker {
