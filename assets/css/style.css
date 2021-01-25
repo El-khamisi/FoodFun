@@ -329,6 +329,54 @@ iframe {
 }
 
 
+/*******************ButtonTop***********/
+
+.btnTop {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    top: 600px;
+    right: 50px;
+    font-size: 24px;
+    /* background-color: #bbbbbb; */
+    z-index: 9999999999;
+    /* border: 1px solid var(--default-color); */
+    outline: none;
+    padding: 5px;
+    color: var(--secondary-color);
+}
+
+
+/*************ScrollBar**********************/
+
+ ::-webkit-scrollbar {
+    width: 15px;
+    box-shadow: inset 0 0 5px grey;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: var(--prim-color);
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #f8a100;
+}
+
+
 /*********media query**********/
 
 

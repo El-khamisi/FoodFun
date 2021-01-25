@@ -66,6 +66,7 @@
 
 .nav-list li {
     display: inline-block;
+    padding: 1vw;
 }
 
 .header li a {
@@ -73,7 +74,13 @@
     color: var(--footer-bg);
     font-size: var(--font-small);
     font-weight: bolder;
-    padding: 1vw;
+    padding: 0;
+}
+
+.header li:hover a,
+.header li a:focus {
+    padding-bottom: 2vw;
+    border-bottom: 3px solid var(--secondary-color);
 }
 
 .sub-nav {
@@ -103,8 +110,20 @@
     transition: 1.5s ease;
 }
 
+.blog-nav:hover .sub-nav li a {
+    border-bottom: 1px solid transparent;
+    padding-bottom: 0;
+}
+
+.sub-nav li a {
+    border-bottom: 1px solid transparent;
+    padding-bottom: 0;
+}
+
 .sub-nav li:hover a {
     color: var(--secondary-color);
+    border-bottom: 1px solid transparent;
+    padding-bottom: 0;
 }
 
 
