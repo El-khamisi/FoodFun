@@ -218,3 +218,51 @@ body {
 
 
 /* End says */
+
+
+
+
+
+/* screen responsive */
+
+@media (max-width: 767px) {
+  
+    .welcome {
+        background-position: bottom right;
+    }
+    .welcomeA {
+        flex-direction: column;
+    }
+    .welcomeA-img,
+    .welcomeA-paragraph,
+    .welcomeB-header {
+        width: 100%;
+    }
+    .deshe1,
+    .deshe2 {
+        flex-direction: column;
+    }
+    .deshe-des {
+        width: 100%;
+    }
+    .deshe1 img,
+    .deshe2 img {
+        width: 100%;
+    }
+    .cards {
+        grid-template-columns: repeat(5, 90vw);
+    }
+    .card {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1000px) {
+   
+    .welcome {
+        background-position: bottom right;
+    }
+    .cards {
+        grid-template-columns: repeat(5, 90vw);
+    }
+}

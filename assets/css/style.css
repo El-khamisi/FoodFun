@@ -123,7 +123,7 @@ iframe {
 
 .toggle-btn {
   position: fixed;
-  top: calc(100vh - 145px);
+  top: calc(95vh - 145px);
   left: 0;
   background-color: #fff;
   width: 30px;
