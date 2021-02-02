@@ -32,8 +32,13 @@ header {
 }
 
 /*********map************/
-
-.map {
+.map{
+  width: 100%;
+}
+.map iframe{
+  position: static;
+}
+ /* .map {
   position: relative;
   top: 0;
 }
@@ -45,7 +50,7 @@ header {
   top: 0;
   bottom: 0;
   width: 100%;
-}
+}  */
 
 /************Contact-information********/
 
@@ -121,16 +126,24 @@ header {
 
 /***************media query************/
 
-@media (max-width: 500px) {
-  .contact-info {
+@media (max-width: 600px) {
+  .contact-info
+  {
+    flex-wrap: wrap;
+  }
+  .sec-md {
+    display: flex;
     flex-wrap: wrap;
   }
   .col-sm {
     flex-basis: 100%;
   }
+  #col-md {
+    flex-basis: 100%;
+  }
 }
 
-@media (min-width: 501px) and (max-width: 991px) {
+@media (min-width: 601px) and (max-width: 991px) {
   .contact-info {
     flex-wrap: wrap;
   }
