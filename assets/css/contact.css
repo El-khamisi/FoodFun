@@ -32,13 +32,13 @@ header {
 }
 
 /*********map************/
-.map{
+.map {
   width: 100%;
 }
-.map iframe{
+.map iframe {
   position: static;
 }
- /* .map {
+/* .map {
   position: relative;
   top: 0;
 }
@@ -61,7 +61,7 @@ header {
 }
 
 .contact-info h5 {
-  color: #131230;
+  color: var(--footer-bg);
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -86,13 +86,13 @@ header {
 #col-md {
   flex-basis: 50%;
   padding-right: 0;
-  padding-left: 20px;
+  padding-left: 70px;
 }
 
 .form-input input {
   width: 100%;
   background-color: var(--primary-color);
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--text-bcolor);
   padding: 15px 5px;
   margin-bottom: 20px;
 }
@@ -100,11 +100,14 @@ header {
 /***********text-area***************/
 
 .textar textarea {
-  min-height: 40vh;
-  max-height: 70vh;
+  padding-top: 5px;
+  padding-left: 5px;
+  min-height: 30vh;
+  max-height: 60vh;
   resize: vertical;
   width: 100%;
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--text-bcolor);
+  background-color: var(--primary-color);
 }
 
 .textar-btn {
@@ -116,7 +119,6 @@ header {
 
 .textar button a {
   color: #000;
-  padding: 20px 20px;
 }
 
 .textar button:hover a {
@@ -127,8 +129,7 @@ header {
 /***************media query************/
 
 @media (max-width: 600px) {
-  .contact-info
-  {
+  .contact-info {
     flex-wrap: wrap;
   }
   .sec-md {
@@ -140,6 +141,7 @@ header {
   }
   #col-md {
     flex-basis: 100%;
+    padding-left: 0;
   }
 }
 
@@ -155,5 +157,6 @@ header {
   }
   #col-md {
     flex-basis: 100%;
+    padding-left: 0;
   }
 }
